@@ -1,0 +1,16 @@
+---
+name: pumrporder:IDTAG
+clusters:
+  pumrporderIDTAG:
+    services:
+      breed:
+        name: pumrporder:IDTAG
+        deployable: partsunlimitedmrp/orderapi:IDTAG
+        ports:
+          webport: 8080/http
+        environment_variables:
+            MONGO_HOST: "pumrpdatabase.pumrpdatabase.marathon.mesos"
+      scale:
+        cpu: 1      
+        memory: 1024MB
+        instances: 1

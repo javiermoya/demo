@@ -1,0 +1,48 @@
+{
+  "id": "/pumrpdatabase/pumrpdatabase",
+  "backoffFactor": 1.15,
+  "backoffSeconds": 1,
+  "container": {
+    "portMappings": [
+      {
+        "containerPort": 27017,
+        "hostPort": 27017,
+        "protocol": "tcp",
+        "servicePort": 10108,
+        "name": "default"
+      }
+    ],
+    "type": "DOCKER",
+    "volumes": [],
+    "docker": {
+      "image": "partsunlimitedmrp/database",
+      "forcePullImage": true,
+      "privileged": false,
+      "parameters": []
+    }
+  },
+  "cpus": 1,
+  "disk": 0,
+  "instances": 1,
+  "maxLaunchDelaySeconds": 3600,
+  "mem": 1024,
+  "gpus": 0,
+  "networks": [
+    {
+      "mode": "container/bridge"
+    }
+  ],
+  "requirePorts": false,
+  "upgradeStrategy": {
+    "maximumOverCapacity": 1,
+    "minimumHealthCapacity": 1
+  },
+  "killSelection": "YOUNGEST_FIRST",
+  "unreachableStrategy": {
+    "inactiveAfterSeconds": 0,
+    "expungeAfterSeconds": 0
+  },
+  "healthChecks": [],
+  "fetch": [],
+  "constraints": []
+}
