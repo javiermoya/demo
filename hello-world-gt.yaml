@@ -5,7 +5,7 @@ deployed: true
 port: 40111/http
 sticky: null
 virtual_hosts:
-- 35.235.70.226
+- fiinlab-demo.jaak-it.com
 routes:
   hello-world/hello-world/hello-world/webport:
     weight: 100%

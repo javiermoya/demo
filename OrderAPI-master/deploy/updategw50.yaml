@@ -6,7 +6,7 @@ deployed: true
 port: 40200/http
 sticky: null
 virtual_hosts:
-- api.pumrp.julien.work
+- fiinlab-api-demo.jaak-it.com
 routes:
   pumrporder:IDPRETAG/pumrporderIDPRETAG/pumrporder:IDPRETAG/webport:
     weight: 50%
